@@ -1,0 +1,163 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout title="Sobre nuestra compania - Code-QX">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Sobre Code-QX" 
+      highlightText="Code-QX"
+      description="Nuestra misión es empoderar a las empresas con soluciones innovadoras."
+    />
+    
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+          <div>
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              Nuestra Historia
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              De startup a líder de la industria</h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Fundada en 2020, Code-QX comenzó como una pequeña startup con una gran visión: transformar la forma en que las empresas utilizan la tecnología. Desde nuestros humildes comienzos, hemos crecido rápidamente, impulsados por nuestra pasión por la innovación y nuestro compromiso con el éxito de nuestros clientes.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Nuestro camino no ha estado exento de desafíos, pero cada obstáculo nos ha enseñado valiosas lecciones y nos ha acercado a nuestra misión. Hoy, somos un equipo diverso de expertos en tecnología, diseñadores y estrategas, todos unidos por un objetivo común: ayudar a las empresas a prosperar en la era digital.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              En Code-QX, creemos que la tecnología debe ser accesible y fácil de usar para todos. Nos esforzamos por crear soluciones que no solo sean potentes, sino también intuitivas y agradables de usar. Nuestra plataforma está diseñada para adaptarse a las necesidades de empresas de todos los tamaños, desde startups hasta grandes corporaciones.
+            </p>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-xl">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Sassify Team" class="w-full h-auto" />
+          </div>
+        </div>
+        
+        <div class="mb-24">
+          <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              Nuestros Valores
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Lo que nos representa</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Nuestros valores son el corazón de nuestra cultura y guían cada decisión que tomamos. Creemos en la importancia de la integridad, la innovación y el compromiso con nuestros clientes.
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Confianza y Transparencia</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Creemos en construir relaciones sólidas y duraderas con nuestros clientes y socios. La confianza y la transparencia son fundamentales para nosotros, y nos esforzamos por ser abiertos y honestos en todas nuestras interacciones.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Innovación y Excelencia</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Superar nuestros límites es lo que nos impulsa. Buscamos constantemente nuevas formas de resolver problemas complejos y ofrecer un valor excepcional a nuestros clientes.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Éxito al Cliente</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                El éxito de nuestros clientes es nuestra prioridad. Nos comprometemos a brindar un servicio excepcional y a trabajar en estrecha colaboración con nuestros clientes para ayudarles a alcanzar sus objetivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-24">
+          <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              Leadership Team
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Nuestros Lideres</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Dentro de nuestro equipo de lideres hay una mezcla de experiencia, creatividad y pasión. Cada miembro aporta su propio conjunto de habilidades y perspectivas únicas, lo que nos permite abordar los desafíos desde diferentes ángulos y encontrar soluciones innovadoras.
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Aldair</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">CEO & Co-Founder</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                Aldair es el visionario detrás de Code-QX, guiando la dirección estratégica y asegurando que nos mantengamos enfocados en nuestra misión de empoderar a las empresas con soluciones innovadoras.
+              </p>
+            </div>
+            
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Jhon L.</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Director General</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                Jhon es un líder experimentado con una sólida trayectoria en la gestión de equipos y la implementación de estrategias efectivas. Su enfoque centrado en el cliente garantiza que siempre estemos alineados con las necesidades de nuestros usuarios.
+              </p>
+            </div>
+            
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David Rodriguez" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">André Salvador</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Jefe Departamento de Tecnología</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                André es un experto en tecnología con una pasión por la innovación. Su liderazgo en el departamento de tecnología asegura que siempre estemos a la vanguardia de las tendencias y avances tecnológicos.
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David Rodriguez" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Daniel L.</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Jefe Departamento de Operación</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                Daniel es un líder experimentado con una sólida trayectoria en la gestión de equipos y la implementación de estrategias efectivas. Su enfoque centrado en el cliente garantiza que siempre estemos alineados con las necesidades de nuestros usuarios.
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David Rodriguez" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Edwin B.</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Auditor y Contador Público</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                Un auditor y contador público con una sólida trayectoria en la gestión de equipos y la implementación de estrategias efectivas. Su enfoque centrado en el cliente garantiza que siempre estemos alineados con las necesidades de nuestros usuarios.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout> 

@@ -1,0 +1,107 @@
+---
+const plans = [
+  {
+    name: "Inicial",
+    price: 224,
+    description: "Perfecto para pequeños equipos y empresas emergentes",
+    features: [
+      "10GB de almacenamiento",
+      "Soporte básico",
+      "Soporte técnico 24/7", 
+      "Acceso a la API",
+    ],
+    cta: "Iniciar prueba gratuita",
+    popular: false,
+    color: "primary"
+  },
+  {
+    name: "Profesional",
+    price: 600,
+    description: "Ideal para empresas en crecimiento",
+    features: [
+      "50GB de almacenamiento",
+      "Soporte prioritario",
+      "Acceso a la API",
+      "Integraciones personalizadas",
+      "Herramientas de colaboración en equipo"
+    ],
+    cta: "Iniciar prueba gratuita",
+    popular: false,
+    color: "secondary"
+  },
+  {
+    name: "Enterprise",
+    price: 1000,
+    description: "Para grandes organizaciones con necesidades complejas",
+    features: [
+      "1TB de almacenamiento",
+      "Soporte premium",
+      "Gestor de cuentas dedicado",
+      "Acceso a la API",
+      "Integraciones personalizadas",
+      "Herramientas de colaboración en equipo",
+      "Funciones de seguridad avanzadas",
+      "Personalización de marca"
+    ],
+    cta: "Contactar a ventas",
+    popular: false,
+    color: "accent"
+  }
+];
+---
+
+<section id="pricing" class="section bg-gray-50 dark:bg-gray-800/50">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="inline-block px-4 py-1 rounded-full bg-accent-100 dark:bg-accent-900 text-accent-600 dark:text-accent-300 font-medium text-sm mb-4">
+        Nuestros planes
+      </span>
+      
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      {plans.map((plan, index) => (
+        <div 
+          class={`card p-6 border ${plan.popular ? `border-${plan.color}-500 dark:border-${plan.color}-400` : 'border-gray-200 dark:border-gray-700'} slide-up relative`}
+          style={`animation-delay: ${index * 150}ms`}
+        >
+          {plan.popular && (
+            <div class={`absolute top-0 right-0 bg-${plan.color}-500 text-white px-4 py-1 text-sm font-medium rounded-bl-lg rounded-tr-lg`}>
+              Most Popular
+            </div>
+          )}
+          
+          <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{plan.name}</h3>
+          <div class="mb-4">
+            <span class="text-4xl font-bold text-gray-900 dark:text-white">Q{plan.price}</span>
+            <span class="text-gray-500 dark:text-gray-400">/mes</span>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">{plan.description}</p>
+          
+          <ul class="space-y-3 mb-8">
+            {plan.features.map(feature => (
+              <li class="flex items-start">
+                <svg class={`w-5 h-5 text-${plan.color}-500 mr-2 flex-shrink-0 mt-0.5`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">{feature}</span>
+              </li>
+            ))}
+          </ul>
+          
+          <a 
+            href="#signup" 
+            class={`w-full btn ${plan.popular ? `bg-${plan.color}-600 hover:bg-${plan.color}-700 text-white focus:ring-${plan.color}-500` : 'btn-outline'}`}
+          >
+            {plan.cta}
+          </a>
+        </div>
+      ))}
+    </div>
+    
+    <div class="mt-12 text-center">
+      <p class="text-gray-600 dark:text-gray-300 mb-2">¿Necesita un plan personalizado para sus necesidades específicas?</p>
+      <a href="/contact" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Contacta con nuestro equipo de ventas </a>
+    </div>
+  </div>
+</section>

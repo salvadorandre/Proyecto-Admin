@@ -1,0 +1,43 @@
+---
+---
+<section class="relative pt-32 pb-20 md:pt-40 overflow-hidden hero-section">
+  <div class="container-custom relative z-10">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="slide-up" transition:animate="slide">
+        <h1 class="mb-6 text-secondary-900 dark:text-white leading-tight">
+          <span class="text-primary-600 dark:text-primary-400">Automatizando</span> tu vida<br>
+          y tu empresa
+        </h1>
+        <p class="text-xl text-secondary-600 dark:text-secondary-300 mb-8 max-w-lg">
+          Con nuestros servicios podrás automatizar procesos, gestionar tareas y mejorar la productividad de tu empresa con los precios más accesibles del mercado.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/contact" class="btn-primary">
+            Contáctanos
+          </a>
+        </div>
+      </div>
+      
+      <div class="relative fade-in" transition:animate="fade">
+        <!-- Animated Elephant SVG Hero Image -->
+        <div class="w-full max-w-lg mx-auto">
+          
+          <img src="imagenes/principal.jpg" class="w-full h-auto drop-shadow-xl rounded-3xl" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<style>
+  /* Add keyframes for additional animations if needed */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Apply floating animation to the entire SVG container */
+  .fade-in svg {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>
